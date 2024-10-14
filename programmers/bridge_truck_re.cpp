@@ -13,13 +13,8 @@ int solution(int bridge_length, int weight, vector<int> truck_weights) {
     queue<int> q;
 
     while(1){
-        if(q.size() < bridge_length & sum < weight){
-            q.push(truck_weights[truck_idx]);
-            cnt++;
-            sum += truck_weights[truck_idx];
-            truck_idx++;
-        }
-        break;
+        q.push(truck_weights[truck_idx]);
+        truck_idx++;
         
     }
 
