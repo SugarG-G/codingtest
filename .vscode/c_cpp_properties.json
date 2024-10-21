@@ -4,7 +4,8 @@
             "name": "windows-gcc-x64-desktop",
             "includePath": [
                 "${workspaceFolder}/**",
-                "G:/mingw64/include"
+                "G:/mingw64/include",
+                "G:/mingw64/bin"
             ],
             "compilerPath": "G:/mingw64/bin/g++.exe",
             "cStandard": "${default}",
