@@ -62,6 +62,8 @@
     "algorithm": "cpp",
     "*.tcc": "cpp",
     "deque": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "numeric": "cpp",
+    "valarray": "cpp"
   }
 }
