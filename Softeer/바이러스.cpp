@@ -11,7 +11,8 @@ int main(int argc, char** argv)
     cin >> k >> p >> n;
     // 1000000007
     for(int i = 0; i < n; i++){
-        k = (k * p) % mod;
+        k = k*p;
+        k = k%mod;
     }
     cout << k;
 
