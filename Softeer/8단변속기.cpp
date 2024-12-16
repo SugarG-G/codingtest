@@ -17,7 +17,6 @@ int main(int argc, char** argv)
         gear.emplace_back(g);
     }
 
-    asdsa
 
     return 0;
 }
