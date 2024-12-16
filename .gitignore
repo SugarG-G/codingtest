@@ -1,4 +1,2 @@
-Softeer/input.txt
-Softeer/temp.exe
-BOJ_algorithm/DFS,BFS/input.txt
-BOJ_algorithm/DFS,BFS/temp.exe
+**/*.exe
+**/*.txt
