@@ -1,21 +1,20 @@
 #include <iostream>
-#include <algorithm>
 #include <vector>
-
+#include <map>
+#include <algorithm>
+#include <string>
 using namespace std;
 
-int main(int argc, char** argv)
+int main()
 {
-    unsigned long long k, p, n, mod = 1000000007;
-    freopen("input.txt", "r", stdin);
-    cin >> k >> p >> n;
-    // 1000000007
-    for(int i = 0; i < n; i++){
-        k = k*p;
-        k = k%mod;
-    }
-    cout << k;
+	//바이러스의 수 K, 증가율 P, 총 시간 N(초)이 주어진다.
+	unsigned long long k,p,n;
+	cin >> k >> p>> n;
+	for (int i = 0; i < n; i++)
+	{
+		k = k * p % 1000000007;
+	}
 
-
-    return 0;
+	cout << k;
+	return 0;
 }
