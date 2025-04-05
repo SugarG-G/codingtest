@@ -1,38 +1,26 @@
-#include <iostream>
-#include <algorithm>
-#include <math.h>
 #include <string>
 #include <vector>
+#include <iostream> 
 
 using namespace std;
 
-#define max 10
+int answer = 0;
 
-int n,e;
-int graph[max][max];
-bool visited[max];
-
-void dfs(int node){
-    visited[node] = true;
-
-    cout << node << " ";
-
-    for(int next = 0; next < n; ++next){
-        if(!visited[next] && graph[node][next]){
-            dfs(next);
-        }
+void DFS(int idx, vector<int> numbers, int target, int value){   
+    if(idx == numbers.size()){
+        if(target == value) answer++;
+        return;
     }
+
+    DFS(idx + 1, numbers, target, value + numbers[idx]);
+    DFS(idx + 1, numbers, target, value - numbers[idx]);
 }
 
 int solution(vector<int> numbers, int target) {
-    int answer = 0;
-
-
-
+    DFS(0, numbers, target, 0);
     return answer;
 }
 
 int main(){
-    solution({1,1,1,1,1},3);
-    // solution({4,1,2,1},4);
+    cout << solution({1,1,1,1,1}, 3);
 }
