@@ -10,7 +10,7 @@ int main()
 {
     // freopen("input.txt", "r", stdin);
 
-    int a, b;
+    long long a, b;
     
 
     cin >> a >> b;
