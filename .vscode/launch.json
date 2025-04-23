@@ -31,7 +31,7 @@
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
-      "miDebuggerPath": "G:\\mingw64\\bin\\gdb.exe",
+      "miDebuggerPath": "F:\\mingw64\\bin\\gdb.exe",
       "setupCommands": [
         {
           "description": "gdb에 자동 서식 지정 사용",
