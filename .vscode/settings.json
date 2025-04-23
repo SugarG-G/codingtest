@@ -62,10 +62,6 @@
     "algorithm": "cpp",
     "*.tcc": "cpp",
     "deque": "cpp",
-    "vector": "cpp",
-    "sstream": "cpp",
-    "regex": "cpp",
-    "bitset": "cpp",
-    "format": "cpp"
+    "vector": "cpp"
   }
 }
