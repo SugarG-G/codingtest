@@ -1,4 +1,4 @@
-test.cpp
+test*.cpp
 input.txt
 temp.exe
 .vscode/
