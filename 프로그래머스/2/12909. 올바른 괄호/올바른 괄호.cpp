@@ -1,41 +1,30 @@
-#include <iostream>
-#include <algorithm>
-#include <queue>
-#include <vector>
 #include <string>
+#include <vector>
+#include <iostream>
 
 using namespace std;
 
 bool solution(string s)
 {
-    queue<int> q;
-    int t;
-    int cnt = 0;
     bool answer = true;
+    int count = 0;
 
-    for(int i = 0; i < s.size(); i++){
-        q.push(s[i]);
+    if (s.back() == '(')
+        return false;
+    
+    while (!s.empty())
+    {
+        if(s.back() == ')')
+            count++;
+        else
+            count--;
+        
+        if(count < 0)
+            return false;
+        s.pop_back();
     }
-
-    while(!q.empty()){
-        // cout << q.front() << " ";
-        if(q.front() == '('){
-            cnt++;
-        }
-        else{
-            cnt--;
-        }
-        if(cnt < 0){
-            answer = false;
-            break;
-        }
-        //cout << cnt << " ";
-        q.pop();
-    }
-    if(cnt != 0){
-        answer = false;
-    }
-    // cout << "cnt : " << cnt;
-    // cout << endl;
-    return answer;
+    if(count != 0)
+        return false;
+    else 
+        return true;
 }
